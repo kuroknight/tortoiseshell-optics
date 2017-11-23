@@ -1,7 +1,18 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	font-family: Helvetica;
+}
+
 body {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+/* Header Style*/
+
+.container {
+  width: 960px;
 }
 
 header {
@@ -15,11 +26,15 @@ header {
   background-size: cover;
 }
 
+/* Top navigation bar style*/
+.mobile-nav {
+  display: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 960px;
   height: 3rem;
   margin-top: 1rem;
   color: white;
@@ -43,17 +58,23 @@ nav {
 
 /* "Don't just look, see." text */
 .banner-text {
-  position: relative;
-  left: 12rem;
+  display: inline-block;
   color: black;
   background-color: white;
   font-weight: bold;
   line-height: 1.2;
   font-size: 2rem;
-  margin: 10rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
   padding: 1.5rem 5rem;
 }
 
+.flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Services style */
 .services {
   display: flex;
 }
@@ -64,9 +85,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 8rem;
+  height: auto;
   width: 5rem;
   margin: 3rem;
+}
+
+.service p {
+  margin-top: 1rem;
 }
 
 .paper-icon {
@@ -78,10 +103,10 @@ nav {
   width: 5rem;
 }
 
+/* Website information style*/
 .info {
   display: flex;
   justify-content: center;
-  width: 960px;
 }
 
 .item {
@@ -98,8 +123,8 @@ nav {
   margin-bottom: 1rem;
 }
 
+/* Footer style */
 footer {
-  width: 960px;
   padding: 4rem;
   background-color: azure;
   margin-top: 5rem;
@@ -113,4 +138,87 @@ footer {
 .copyright img {
   height: 1.5rem;
   margin-right: 1rem;
+}
+
+/* For Tablet */
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+.banner-text {
+  font-size: 1.33rem;
+  margin-top: 5rem;
+  margin-right: 2rem;
+  padding: 0.75rem 4rem;
+}
+}
+
+/* For Mobile*/
+@media only screen and (max-width: 670px) {
+  .hide {
+    display: none;
+  }
+/* Header */
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+/* Navigation */
+  .mobile-nav {
+    display: block;
+    margin-right: 2rem;
+  }
+/* Main Banner */
+  .banner-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 9rem;
+    margin-right: 0;
+    padding: 1rem;
+  }
+/* Services */
+  .services {
+    flex-flow: column;
+    margin: 3rem;
+  }
+
+  .service {
+    font-size: 0.77rem;
+    margin: 0.77rem;
+  }
+/* Information */
+  .info {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    margin: 0;
+  }
+
+  .item p {
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .item h3 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+/* Footer */
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
