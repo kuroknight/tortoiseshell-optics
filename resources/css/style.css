@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width: 100%;
+  background-image: url(../images/glasses-main-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  height: 3rem;
+  margin-top: 1rem;
+  color: white;
+  background-color: cadetblue;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.nav {
+  margin-right: 2rem;
+}
+
+/* "Don't just look, see." text */
+.banner-text {
+  position: relative;
+  left: 12rem;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 2rem;
+  margin: 10rem;
+  padding: 1.5rem 5rem;
+}
+
+.services {
+  display: flex;
+}
+
+.service {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.paper-icon {
+  width: 3.5rem;
+}
+
+.ruler-icon,
+.truck-icon {
+  width: 5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+}
+
+.item {
+  width: 35%;
+  margin: 2.5%;
+}
+
+.item h3 {
+  width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  width: 960px;
+  padding: 4rem;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
